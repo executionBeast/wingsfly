@@ -1,12 +1,14 @@
 export const weekData = [
-  { day: "Sun", date: 15 },
-  { day: "Mon", date: 16 },
-  { day: "Tue", date: 17 },
-  { day: "Wed", date: 18 },
-  { day: "Thu", date: 19 },
-  { day: "Fri", date: 20 },
-  { day: "Sat", date: 21 },
+  { id: 1, day: "Sun", date: 15 },
+  { id: 2, day: "Mon", date: 16 },
+  { id: 3, day: "Tue", date: 17 },
+  { id: 4, day: "Wed", date: 18 },
+  { id: 5, day: "Thu", date: 19 },
+  { id: 6, day: "Fri", date: 20 },
+  { id: 7, day: "Sat", date: 21 },
 ];
+
+
 
 
 export const tasks = [
@@ -60,5 +62,34 @@ export const tasks = [
     type: "creative",
     status: "pending",
     progress: "12/30",
+  },
+   
+];
+
+
+export const activityTypes = [
+  {
+    id: 1,
+    title: "Habit",
+    description: "Activity that repeats over time; it has detailed tracking and statistics.",
+    type: "habit",    // for dynamic icon
+  },
+  {
+    id: 2,
+    title: "Recurring Task",
+    description: "Activity that repeats over time; it has detailed tracking and statistics.",
+    type: "recurring",  // for dynamic icon
+  },
+  {
+    id: 3,
+    title: "Task",
+    description: "Single instance activity without tracking over time.",
+    type: "task",
+  },
+  {
+    id: 4,
+    title: "Goal of the Day",
+    description: "A specific target set for oneself to achieve within a single day.",
+    type: "goal",
   },
 ];
