@@ -8,7 +8,7 @@ import { weekData } from '../constants';
 import { tasks } from '../constants';
 
 import TodaysQuoteCard from '../components/TodaysQuoteCard';
-import TaskList from '../components/TaskList';
+import TaskItem from '../components/TaskList';
 import { useState } from 'react';
 import AddModal from '../components/AddModal';
 export default function WingsFlyApp() {
@@ -42,16 +42,11 @@ export default function WingsFlyApp() {
                 <TodaysQuoteCard quote={'You must do the things, you think you cannot do.'} progress={65}/>
             </View>
 
-            {/* <ScrollView id="todos" style={{backgroundColor:'green', width:WINDOW_WIDTH, marginTop:20, height:100}}>
-                {tasks.map((task, index)=> <TaskList key={index} data={task}/>)}
-            </ScrollView>
-             */}
             <View style={{width:WINDOW_WIDTH, height:WINDOW_HEIGHT*0.56, marginTop:20}}>
                 <FlatList 
                     windowSize={21}
                     data={tasks} 
-                    renderItem={({item}) => <TaskList data={item}/>}
-                    // keyExtractor={item => item.id}
+                    renderItem={({item}) => <TaskItem data={item}/>}
                 />
             </View>
 

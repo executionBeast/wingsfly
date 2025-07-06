@@ -8,7 +8,7 @@ import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 // import AntDesignIcon from 'react-native-vector-icons/Antdesign'
 // import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 import { JSX } from "react";
-export default function TaskList({data}) : JSX.Element {
+export default function TaskItem({data}) : JSX.Element {
     return (
         <View style={{width: WINDOW_WIDTH, height: WINDOW_HEIGHT*0.09, backgroundColor:'', alignItems:'center', justifyContent:'space-between', flexDirection:'row', marginVertical:2, paddingHorizontal:10, gap:5}}>
             <View id="icon" style={{height:'100%', alignItems:'center', justifyContent:'center', backgroundColor:''}}>
