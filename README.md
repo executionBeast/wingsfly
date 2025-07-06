@@ -66,9 +66,12 @@ npm run android
 
 
 ## Screenshots 
-1. ![Wingsfly Home Screen](https://drive.google.com/file/d/1qAtfLeJGNTeUVEEqcHOd2dIhQKGZwR8k/view?usp=drive_link) 
-2. ![Wingsfly Home Screen](https://drive.google.com/file/d/1qB1cIzjO-AhDwTCFy8A4D1VWRCUAvAAE/view?usp=drive_link)
-3. ![Home Screen Modal](https://drive.google.com/file/d/1qH4bmgfBa_JTM4klvSnij-i6uhYuXeli/view?usp=drive_link)
+![Wingsfly Home Screen](/src/images/ss/wingsfly-home-screen.jpg) 
+![Wingsfly Home Screen](/src/images/ss/wingsfly-home-screen-1.jpg)
+![Home Screen Modal](/src/images/ss/wingsfly-homescreen-modal.jpg)
 
 ## Home Screen
 Home Screen includes header, calendar date picker, todays quote with progress bar, then task list, and a floating add button at bottom
+
+
+https://drive.google.com/uc?export=view&id=1qAtfLeJGNTeUVEEqcHOd2dIhQKGZwR8k
