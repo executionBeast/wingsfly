@@ -4,7 +4,10 @@ import logo from "../images/logo.png"
 import Icon from 'react-native-vector-icons/FontAwesome'; 
 import Date from '../components/Date';
 import { weekData } from '../constants';
+import { tasks } from '../constants';
+
 import TodaysQuoteCard from '../components/TodaysQuoteCard';
+import TaskList from '../components/TaskList';
 export default function WingsFlyApp() {
     return (
         <View style={{flex:1, backgroundColor:'#FEFEFE', alignItems:'center', justifyContent:'flex-start'}}>
@@ -33,8 +36,8 @@ export default function WingsFlyApp() {
                 <TodaysQuoteCard quote={'You must do the things, you think you cannot do.'} progress={65}/>
             </View>
 
-            <View id="todos" style={{backgroundColor:'#676767', width:WINDOW_WIDTH}}>
-                
+            <View id="todos" style={{backgroundColor:'#FEFEFE', width:WINDOW_WIDTH, flex:1, marginTop:20}}>
+                {tasks.map((task)=> <TaskList key={task.id} data={task}/>)}
             </View>
         </View>
     )
